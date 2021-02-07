@@ -13,7 +13,64 @@
 		9216253E2593A850003713A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921625292593A84F003713A1 /* ContentView.swift */; };
 		9216253F2593A850003713A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9216252A2593A850003713A1 /* Assets.xcassets */; };
 		921625402593A850003713A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9216252A2593A850003713A1 /* Assets.xcassets */; };
+		921625542593A8D7003713A1 /* AnonAddyAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 921625522593A8D7003713A1 /* AnonAddyAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		921625572593A8D7003713A1 /* AnonAddyAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921625502593A8D7003713A1 /* AnonAddyAPI.framework */; };
+		921625582593A8D7003713A1 /* AnonAddyAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921625502593A8D7003713A1 /* AnonAddyAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		921625872593B02E003713A1 /* AnonAddyAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921625502593A8D7003713A1 /* AnonAddyAPI.framework */; };
+		921625882593B02E003713A1 /* AnonAddyAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921625502593A8D7003713A1 /* AnonAddyAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9216258E2593B500003713A1 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9216258D2593B500003713A1 /* Client.swift */; };
+		921625912593B5D6003713A1 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 921625902593B5D6003713A1 /* AccessToken.swift */; };
+		9239337D2593DF49002B5CFC /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9239337C2593DF49002B5CFC /* Account.swift */; };
+		928A5F7825D0560300D6AE90 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F7725D0560300D6AE90 /* ClientError.swift */; };
+		928A5F7E25D05AB100D6AE90 /* EndpointKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F7D25D05AB100D6AE90 /* EndpointKind.swift */; };
+		928A5F8225D05AEB00D6AE90 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8125D05AEB00D6AE90 /* Endpoint.swift */; };
+		928A5F8525D05B1100D6AE90 /* EndpointKinds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8425D05B1100D6AE90 /* EndpointKinds.swift */; };
+		928A5F8925D05B6500D6AE90 /* AccountLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8825D05B6500D6AE90 /* AccountLoader.swift */; };
+		928A5F8E25D05BCA00D6AE90 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8D25D05BCA00D6AE90 /* NetworkResponse.swift */; };
+		928A5F9725D05C2C00D6AE90 /* URLSession+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F9625D05C2C00D6AE90 /* URLSession+Request.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		921625552593A8D7003713A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 921625232593A84F003713A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9216254F2593A8D7003713A1;
+			remoteInfo = AnonAddyAPI;
+		};
+		921625892593B02F003713A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 921625232593A84F003713A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9216254F2593A8D7003713A1;
+			remoteInfo = AnonAddyAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9216255C2593A8D7003713A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				921625582593A8D7003713A1 /* AnonAddyAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		921625702593AA00003713A1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				921625882593B02E003713A1 /* AnonAddyAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		921625282593A84F003713A1 /* AnonAddyClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonAddyClientApp.swift; sourceTree = "<group>"; };
@@ -24,6 +81,19 @@
 		921625372593A850003713A1 /* AnonAddyClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnonAddyClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		921625392593A850003713A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9216253A2593A850003713A1 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		921625502593A8D7003713A1 /* AnonAddyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AnonAddyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		921625522593A8D7003713A1 /* AnonAddyAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnonAddyAPI.h; sourceTree = "<group>"; };
+		921625532593A8D7003713A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9216258D2593B500003713A1 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		921625902593B5D6003713A1 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		9239337C2593DF49002B5CFC /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		928A5F7725D0560300D6AE90 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		928A5F7D25D05AB100D6AE90 /* EndpointKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EndpointKind.swift; path = AnonAddyAPI/EndpointKind.swift; sourceTree = SOURCE_ROOT; };
+		928A5F8125D05AEB00D6AE90 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		928A5F8425D05B1100D6AE90 /* EndpointKinds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointKinds.swift; sourceTree = "<group>"; };
+		928A5F8825D05B6500D6AE90 /* AccountLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLoader.swift; sourceTree = "<group>"; };
+		928A5F8D25D05BCA00D6AE90 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
+		928A5F9625D05C2C00D6AE90 /* URLSession+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Request.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,10 +101,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				921625572593A8D7003713A1 /* AnonAddyAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		921625342593A850003713A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921625872593B02E003713A1 /* AnonAddyAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9216254D2593A8D7003713A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,13 +129,16 @@
 				921625272593A84F003713A1 /* Shared */,
 				921625312593A850003713A1 /* iOS */,
 				921625382593A850003713A1 /* macOS */,
+				921625512593A8D7003713A1 /* AnonAddyAPI */,
 				921625302593A850003713A1 /* Products */,
+				921625862593B02E003713A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		921625272593A84F003713A1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				928A5F7425D0555600D6AE90 /* ClientManager */,
 				921625282593A84F003713A1 /* AnonAddyClientApp.swift */,
 				921625292593A84F003713A1 /* ContentView.swift */,
 				9216252A2593A850003713A1 /* Assets.xcassets */,
@@ -69,6 +151,7 @@
 			children = (
 				9216252F2593A850003713A1 /* AnonAddyClient.app */,
 				921625372593A850003713A1 /* AnonAddyClient.app */,
+				921625502593A8D7003713A1 /* AnonAddyAPI.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +173,115 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
+		921625512593A8D7003713A1 /* AnonAddyAPI */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F8C25D05BBC00D6AE90 /* Networking */,
+				928A5F8B25D05B8100D6AE90 /* DataModels */,
+				928A5F7625D055F300D6AE90 /* Errors */,
+				921625522593A8D7003713A1 /* AnonAddyAPI.h */,
+				921625532593A8D7003713A1 /* Info.plist */,
+			);
+			path = AnonAddyAPI;
+			sourceTree = "<group>";
+		};
+		921625862593B02E003713A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		928A5F7425D0555600D6AE90 /* ClientManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ClientManager;
+			sourceTree = "<group>";
+		};
+		928A5F7625D055F300D6AE90 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F7725D0560300D6AE90 /* ClientError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		928A5F7C25D05A9600D6AE90 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F7D25D05AB100D6AE90 /* EndpointKind.swift */,
+				928A5F8425D05B1100D6AE90 /* EndpointKinds.swift */,
+				928A5F8125D05AEB00D6AE90 /* Endpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		928A5F8B25D05B8100D6AE90 /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F9125D05BEE00D6AE90 /* Response */,
+				928A5F9325D05BFA00D6AE90 /* API */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		928A5F8C25D05BBC00D6AE90 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F9A25D05CCA00D6AE90 /* Session */,
+				928A5F9925D05CBD00D6AE90 /* Loaders */,
+				928A5F7C25D05A9600D6AE90 /* Endpoint */,
+				928A5F9625D05C2C00D6AE90 /* URLSession+Request.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		928A5F9125D05BEE00D6AE90 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F8D25D05BCA00D6AE90 /* NetworkResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		928A5F9325D05BFA00D6AE90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				921625902593B5D6003713A1 /* AccessToken.swift */,
+				9239337C2593DF49002B5CFC /* Account.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		928A5F9925D05CBD00D6AE90 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F8825D05B6500D6AE90 /* AccountLoader.swift */,
+			);
+			path = Loaders;
+			sourceTree = "<group>";
+		};
+		928A5F9A25D05CCA00D6AE90 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				9216258D2593B500003713A1 /* Client.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9216254B2593A8D7003713A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921625542593A8D7003713A1 /* AnonAddyAPI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9216252E2593A850003713A1 /* AnonAddyClient (iOS) */ = {
@@ -100,10 +291,12 @@
 				9216252B2593A850003713A1 /* Sources */,
 				9216252C2593A850003713A1 /* Frameworks */,
 				9216252D2593A850003713A1 /* Resources */,
+				9216255C2593A8D7003713A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				921625562593A8D7003713A1 /* PBXTargetDependency */,
 			);
 			name = "AnonAddyClient (iOS)";
 			productName = "AnonAddyClient (iOS)";
@@ -117,15 +310,35 @@
 				921625332593A850003713A1 /* Sources */,
 				921625342593A850003713A1 /* Frameworks */,
 				921625352593A850003713A1 /* Resources */,
+				921625702593AA00003713A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9216258A2593B02F003713A1 /* PBXTargetDependency */,
 			);
 			name = "AnonAddyClient (macOS)";
 			productName = "AnonAddyClient (macOS)";
 			productReference = 921625372593A850003713A1 /* AnonAddyClient.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9216254F2593A8D7003713A1 /* AnonAddyAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 921625592593A8D7003713A1 /* Build configuration list for PBXNativeTarget "AnonAddyAPI" */;
+			buildPhases = (
+				9216254B2593A8D7003713A1 /* Headers */,
+				9216254C2593A8D7003713A1 /* Sources */,
+				9216254D2593A8D7003713A1 /* Frameworks */,
+				9216254E2593A8D7003713A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AnonAddyAPI;
+			productName = AnonAddyAPI;
+			productReference = 921625502593A8D7003713A1 /* AnonAddyAPI.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -141,6 +354,10 @@
 					};
 					921625362593A850003713A1 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					9216254F2593A8D7003713A1 = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -159,6 +376,7 @@
 			targets = (
 				9216252E2593A850003713A1 /* AnonAddyClient (iOS) */,
 				921625362593A850003713A1 /* AnonAddyClient (macOS) */,
+				9216254F2593A8D7003713A1 /* AnonAddyAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -177,6 +395,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				921625402593A850003713A1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9216254E2593A8D7003713A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +426,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9216254C2593A8D7003713A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				928A5F8E25D05BCA00D6AE90 /* NetworkResponse.swift in Sources */,
+				928A5F8525D05B1100D6AE90 /* EndpointKinds.swift in Sources */,
+				928A5F9725D05C2C00D6AE90 /* URLSession+Request.swift in Sources */,
+				928A5F8225D05AEB00D6AE90 /* Endpoint.swift in Sources */,
+				9239337D2593DF49002B5CFC /* Account.swift in Sources */,
+				928A5F8925D05B6500D6AE90 /* AccountLoader.swift in Sources */,
+				928A5F7E25D05AB100D6AE90 /* EndpointKind.swift in Sources */,
+				9216258E2593B500003713A1 /* Client.swift in Sources */,
+				921625912593B5D6003713A1 /* AccessToken.swift in Sources */,
+				928A5F7825D0560300D6AE90 /* ClientError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		921625562593A8D7003713A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9216254F2593A8D7003713A1 /* AnonAddyAPI */;
+			targetProxy = 921625552593A8D7003713A1 /* PBXContainerItemProxy */;
+		};
+		9216258A2593B02F003713A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9216254F2593A8D7003713A1 /* AnonAddyAPI */;
+			targetProxy = 921625892593B02F003713A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		921625412593A850003713A1 /* Debug */ = {
@@ -318,13 +573,14 @@
 		921625442593A850003713A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QEC3K9K4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,13 +596,14 @@
 		921625452593A850003713A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QEC3K9K4B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +620,7 @@
 		921625472593A850003713A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
@@ -376,7 +634,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zachmcgaughey.AnonAddyClient;
 				PRODUCT_NAME = AnonAddyClient;
 				SDKROOT = macosx;
@@ -387,6 +645,7 @@
 		921625482593A850003713A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
@@ -400,11 +659,77 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zachmcgaughey.AnonAddyClient;
 				PRODUCT_NAME = AnonAddyClient;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9216255A2593A8D7003713A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8QEC3K9K4B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AnonAddyAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zachmcgaughey.AnonAddyAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9216255B2593A8D7003713A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8QEC3K9K4B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AnonAddyAPI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zachmcgaughey.AnonAddyAPI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -434,6 +759,15 @@
 			buildConfigurations = (
 				921625472593A850003713A1 /* Debug */,
 				921625482593A850003713A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		921625592593A8D7003713A1 /* Build configuration list for PBXNativeTarget "AnonAddyAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9216255A2593A8D7003713A1 /* Debug */,
+				9216255B2593A8D7003713A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
