@@ -23,7 +23,7 @@ internal enum EndpointKinds {
     
     static func prepare(_ request: inout URLRequest, with token: AccessToken) {
       request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-      request.addValue("XMLHttpRequest", forHTTPHeaderField: "-Requested-With")
+      request.addValue("XMLHttpRequest", forHTTPHeaderField: "X-Requested-With")
       request.addValue("Bearer \(token.rawValue)", forHTTPHeaderField: "Authorization")
     }
     

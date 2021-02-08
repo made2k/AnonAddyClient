@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,26 @@
 		928A5F8925D05B6500D6AE90 /* AccountLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8825D05B6500D6AE90 /* AccountLoader.swift */; };
 		928A5F8E25D05BCA00D6AE90 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F8D25D05BCA00D6AE90 /* NetworkResponse.swift */; };
 		928A5F9725D05C2C00D6AE90 /* URLSession+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F9625D05C2C00D6AE90 /* URLSession+Request.swift */; };
+		92BE51F225D07AF500E344FC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE51F125D07AF500E344FC /* Assets.swift */; };
+		92BE51F525D07BEF00E344FC /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE51F125D07AF500E344FC /* Assets.swift */; };
+		92BE51F825D07BF600E344FC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F9C25D0620400D6AE90 /* LoginView.swift */; };
+		92BE51FA25D07BF700E344FC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928A5F9C25D0620400D6AE90 /* LoginView.swift */; };
+		92BE51FD25D0809800E344FC /* Login.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92BE51FC25D0809800E344FC /* Login.strings */; };
+		92BE51FE25D0809800E344FC /* Login.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92BE51FC25D0809800E344FC /* Login.strings */; };
+		92BE520525D0864D00E344FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE520425D0864D00E344FC /* LoginViewModel.swift */; };
+		92BE520625D0864D00E344FC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE520425D0864D00E344FC /* LoginViewModel.swift */; };
+		92BE520925D08BA500E344FC /* DisabledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE520825D08BA500E344FC /* DisabledButtonStyle.swift */; };
+		92BE520A25D08BA500E344FC /* DisabledButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE520825D08BA500E344FC /* DisabledButtonStyle.swift */; };
+		92BE520E25D194A100E344FC /* DataTaskPublisher+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE520D25D194A100E344FC /* DataTaskPublisher+Validation.swift */; };
+		92BE521225D194D600E344FC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE521125D194D600E344FC /* APIError.swift */; };
+		92BE521625D1997800E344FC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE521525D1997800E344FC /* SessionManager.swift */; };
+		92BE521725D1997800E344FC /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE521525D1997800E344FC /* SessionManager.swift */; };
+		92BE521B25D19A4D00E344FC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 92BE521A25D19A4D00E344FC /* KeychainAccess */; };
+		92BE521E25D19A9700E344FC /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 92BE521D25D19A9700E344FC /* KeychainAccess */; };
+		92BE522225D1A3F900E344FC /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE522125D1A3F900E344FC /* ActivityIndicatorView.swift */; };
+		92BE522325D1A3F900E344FC /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE522125D1A3F900E344FC /* ActivityIndicatorView.swift */; };
+		92BE522625D1A7F900E344FC /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE522525D1A7F900E344FC /* AppViewModel.swift */; };
+		92BE522725D1A7F900E344FC /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92BE522525D1A7F900E344FC /* AppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +114,16 @@
 		928A5F8825D05B6500D6AE90 /* AccountLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountLoader.swift; sourceTree = "<group>"; };
 		928A5F8D25D05BCA00D6AE90 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		928A5F9625D05C2C00D6AE90 /* URLSession+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Request.swift"; sourceTree = "<group>"; };
+		928A5F9C25D0620400D6AE90 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		92BE51F125D07AF500E344FC /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		92BE51FC25D0809800E344FC /* Login.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Login.strings; sourceTree = "<group>"; };
+		92BE520425D0864D00E344FC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		92BE520825D08BA500E344FC /* DisabledButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisabledButtonStyle.swift; sourceTree = "<group>"; };
+		92BE520D25D194A100E344FC /* DataTaskPublisher+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataTaskPublisher+Validation.swift"; sourceTree = "<group>"; };
+		92BE521125D194D600E344FC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		92BE521525D1997800E344FC /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		92BE522125D1A3F900E344FC /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		92BE522525D1A7F900E344FC /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BE521B25D19A4D00E344FC /* KeychainAccess in Frameworks */,
 				921625572593A8D7003713A1 /* AnonAddyAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BE521E25D19A9700E344FC /* KeychainAccess in Frameworks */,
 				921625872593B02E003713A1 /* AnonAddyAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,10 +170,12 @@
 		921625272593A84F003713A1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				928A5F7425D0555600D6AE90 /* ClientManager */,
 				921625282593A84F003713A1 /* AnonAddyClientApp.swift */,
-				921625292593A84F003713A1 /* ContentView.swift */,
 				9216252A2593A850003713A1 /* Assets.xcassets */,
+				928A5F7425D0555600D6AE90 /* SessionManager */,
+				92BE520225D080A700E344FC /* Flows */,
+				92BE51F125D07AF500E344FC /* Assets.swift */,
+				92BE520825D08BA500E344FC /* DisabledButtonStyle.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -192,17 +226,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		928A5F7425D0555600D6AE90 /* ClientManager */ = {
+		928A5F7425D0555600D6AE90 /* SessionManager */ = {
 			isa = PBXGroup;
 			children = (
+				92BE521525D1997800E344FC /* SessionManager.swift */,
 			);
-			path = ClientManager;
+			path = SessionManager;
 			sourceTree = "<group>";
 		};
 		928A5F7625D055F300D6AE90 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				928A5F7725D0560300D6AE90 /* ClientError.swift */,
+				92BE521125D194D600E344FC /* APIError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -229,6 +265,7 @@
 		928A5F8C25D05BBC00D6AE90 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				92BE520C25D1948B00E344FC /* Extensions */,
 				928A5F9A25D05CCA00D6AE90 /* Session */,
 				928A5F9925D05CBD00D6AE90 /* Loaders */,
 				928A5F7C25D05A9600D6AE90 /* Endpoint */,
@@ -270,6 +307,51 @@
 			path = Session;
 			sourceTree = "<group>";
 		};
+		92BE520025D080A000E344FC /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				928A5F9C25D0620400D6AE90 /* LoginView.swift */,
+				92BE520425D0864D00E344FC /* LoginViewModel.swift */,
+				92BE51FC25D0809800E344FC /* Login.strings */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		92BE520225D080A700E344FC /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				92BE522025D1A3EB00E344FC /* ActivityIndicator */,
+				92BE522C25D1AE4100E344FC /* Startup */,
+				92BE520025D080A000E344FC /* Login */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		92BE520C25D1948B00E344FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92BE520D25D194A100E344FC /* DataTaskPublisher+Validation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92BE522025D1A3EB00E344FC /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				92BE522125D1A3F900E344FC /* ActivityIndicatorView.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		92BE522C25D1AE4100E344FC /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				92BE522525D1A7F900E344FC /* AppViewModel.swift */,
+				921625292593A84F003713A1 /* ContentView.swift */,
+			);
+			path = Startup;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -299,6 +381,9 @@
 				921625562593A8D7003713A1 /* PBXTargetDependency */,
 			);
 			name = "AnonAddyClient (iOS)";
+			packageProductDependencies = (
+				92BE521A25D19A4D00E344FC /* KeychainAccess */,
+			);
 			productName = "AnonAddyClient (iOS)";
 			productReference = 9216252F2593A850003713A1 /* AnonAddyClient.app */;
 			productType = "com.apple.product-type.application";
@@ -318,6 +403,9 @@
 				9216258A2593B02F003713A1 /* PBXTargetDependency */,
 			);
 			name = "AnonAddyClient (macOS)";
+			packageProductDependencies = (
+				92BE521D25D19A9700E344FC /* KeychainAccess */,
+			);
 			productName = "AnonAddyClient (macOS)";
 			productReference = 921625372593A850003713A1 /* AnonAddyClient.app */;
 			productType = "com.apple.product-type.application";
@@ -370,6 +458,9 @@
 				Base,
 			);
 			mainGroup = 921625222593A84F003713A1;
+			packageReferences = (
+				92BE521925D19A4D00E344FC /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 921625302593A850003713A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -386,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BE51FD25D0809800E344FC /* Login.strings in Resources */,
 				9216253F2593A850003713A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BE51FE25D0809800E344FC /* Login.strings in Resources */,
 				921625402593A850003713A1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,8 +505,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92BE51F225D07AF500E344FC /* Assets.swift in Sources */,
+				92BE520925D08BA500E344FC /* DisabledButtonStyle.swift in Sources */,
+				92BE522625D1A7F900E344FC /* AppViewModel.swift in Sources */,
 				9216253D2593A850003713A1 /* ContentView.swift in Sources */,
+				92BE522225D1A3F900E344FC /* ActivityIndicatorView.swift in Sources */,
+				92BE51FA25D07BF700E344FC /* LoginView.swift in Sources */,
+				92BE520525D0864D00E344FC /* LoginViewModel.swift in Sources */,
 				9216253B2593A850003713A1 /* AnonAddyClientApp.swift in Sources */,
+				92BE521625D1997800E344FC /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +522,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9216253E2593A850003713A1 /* ContentView.swift in Sources */,
+				92BE520A25D08BA500E344FC /* DisabledButtonStyle.swift in Sources */,
+				92BE522725D1A7F900E344FC /* AppViewModel.swift in Sources */,
 				9216253C2593A850003713A1 /* AnonAddyClientApp.swift in Sources */,
+				92BE522325D1A3F900E344FC /* ActivityIndicatorView.swift in Sources */,
+				92BE51F825D07BF600E344FC /* LoginView.swift in Sources */,
+				92BE520625D0864D00E344FC /* LoginViewModel.swift in Sources */,
+				92BE51F525D07BEF00E344FC /* Assets.swift in Sources */,
+				92BE521725D1997800E344FC /* SessionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,10 +542,12 @@
 				928A5F9725D05C2C00D6AE90 /* URLSession+Request.swift in Sources */,
 				928A5F8225D05AEB00D6AE90 /* Endpoint.swift in Sources */,
 				9239337D2593DF49002B5CFC /* Account.swift in Sources */,
+				92BE521225D194D600E344FC /* APIError.swift in Sources */,
 				928A5F8925D05B6500D6AE90 /* AccountLoader.swift in Sources */,
 				928A5F7E25D05AB100D6AE90 /* EndpointKind.swift in Sources */,
 				9216258E2593B500003713A1 /* Client.swift in Sources */,
 				921625912593B5D6003713A1 /* AccessToken.swift in Sources */,
+				92BE520E25D194A100E344FC /* DataTaskPublisher+Validation.swift in Sources */,
 				928A5F7825D0560300D6AE90 /* ClientError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -773,6 +882,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		92BE521925D19A4D00E344FC /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92BE521A25D19A4D00E344FC /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92BE521925D19A4D00E344FC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		92BE521D25D19A9700E344FC /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 92BE521925D19A4D00E344FC /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 921625232593A84F003713A1 /* Project object */;
 }

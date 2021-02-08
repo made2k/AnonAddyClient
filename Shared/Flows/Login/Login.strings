@@ -1,0 +1,11 @@
+/* 
+  Login.strings
+  AnonAddyClient
+
+  Created by Zach McGaughey on 2/7/21.
+  
+*/
+
+"access token placeholder" = "Access Token";
+"access token instructions" = "You can get your access token by logging in to the web site and going to settings to generate a new token.";
+"login button title" = "Login";

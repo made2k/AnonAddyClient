@@ -1,1 +1,11 @@
+
+## User settings
 AnonAddyClient.xcodeproj/xcuserdata/
+
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+

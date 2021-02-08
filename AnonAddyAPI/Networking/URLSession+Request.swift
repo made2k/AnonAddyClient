@@ -14,17 +14,18 @@ extension URLSession {
     for endpoint: Endpoint<K, R>,
     using requestData: K.RequestData,
     decoder: JSONDecoder = .init()
-  ) -> AnyPublisher<R, Error> {
+  ) -> AnyPublisher<R, APIError> {
     
     guard let request = endpoint.makeRequest(with: requestData) else {
-      // TODO: Invalid endpoint error
-      return Fail(error: ClientError.badRequest).eraseToAnyPublisher()
+      return Fail(error: APIError.invalidEndpoint).eraseToAnyPublisher()
     }
 
     return dataTaskPublisher(for: request)
+      .validate(200..<300)
       .map(\.data)
       .decode(type: NetworkResponse<R>.self, decoder: decoder)
       .map(\.data)
+      .mapError(APIError.init)
       .eraseToAnyPublisher()
 
   }

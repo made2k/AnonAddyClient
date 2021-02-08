@@ -18,7 +18,7 @@ public struct AccountLoader {
     self.urlSession = session
   }
   
-  public func loadAccount() -> AnyPublisher<Account, Error> {
+  public func loadAccount() -> AnyPublisher<Account, APIError> {
     urlSession.publisher(for: .account(), using: userSession.token)
   }
   
