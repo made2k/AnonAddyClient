@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+/// Button style that dims the button when it is disabled.
 struct DisabledButtonStyle: ButtonStyle {
   
   func makeBody(configuration: Configuration) -> some View {
@@ -21,7 +22,7 @@ private extension DisabledButtonStyle {
   struct DisabledButtonStyleView: View {
     
     @Environment(\.isEnabled) var isEnabled
-    
+
     let configuration: DisabledButtonStyle.Configuration
     
     var body: some View {

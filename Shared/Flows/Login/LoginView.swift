@@ -12,7 +12,7 @@ struct LoginView: View {
   
   private let strings = Strings.Login.self
   
-  @ObservedObject private var viewModel = LoginViewModel()
+  @ObservedObject var viewModel: LoginViewModel
   
   var body: some View {
     
@@ -25,10 +25,14 @@ struct LoginView: View {
         Image.Custom.logoFull
           .padding(.bottom, 36)
         
-        TextField(strings.accessTokenPlaceholder, text: $viewModel.accessToken)
-          .padding()
-          .background(Color(.secondarySystemBackground))
-          .cornerRadius(4.0)
+        TextField(
+          strings.accessTokenPlaceholder,
+          text: $viewModel.accessToken,
+          onCommit: textCommit
+        )
+        .padding()
+        .background(Color(.secondarySystemBackground))
+        .cornerRadius(4.0)
         
         Text(strings.accessTokenInstructions)
           .font(.footnote)
@@ -51,6 +55,7 @@ struct LoginView: View {
         
       }
       .padding()
+      .frame(maxWidth: 500)
       
       switch viewModel.state {
       case .loading:
@@ -63,16 +68,21 @@ struct LoginView: View {
     }
     .alert(isPresented: $viewModel.showErrorAlert, content: {
       Alert(
-        title: Text("Bad login"),
+        title: Text(Strings.Login.loginErrorTitle),
         message: nil,
         dismissButton: Alert.Button.default(
-          Text("Try Again"),
+          Text(Strings.Login.loginErrorButton),
           action: {
             viewModel.resetState()
           })
       )
     })
     
+  }
+  
+  private func textCommit() {
+    guard viewModel.canLogin else { return }
+    submit()
   }
   
   private func submit() {
@@ -83,6 +93,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
   static var previews: some View {
-    LoginView()
+    LoginView(viewModel: LoginViewModel(accountModel: AppModel.shared.accountModel))
   }
 }

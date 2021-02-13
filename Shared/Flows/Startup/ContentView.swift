@@ -9,35 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
   
-  @ObservedObject var viewModel: AppViewModel = AppViewModel()
+  @ObservedObject var model: AppModel
   
   var body: some View {
     
-    switch viewModel.state {
-    case .anonymous:
-      LoginView()
+    switch model.authenticatedModel {
+    
+    case .some(let model):
+      AuthenticatedView()
+        .environmentObject(model)
       
-    case .loggedIn:
-      TempLoggedIn()
+    case .none:
+      LoginView(viewModel: LoginViewModel(accountModel: model.accountModel))
+          
     }
     
   }
-}
-
-private struct TempLoggedIn: View {
-  
-  var body: some View {
-    
-    Button("Log out") {
-      SessionManager.shared.client = nil
-    }
-    
-  }
-  
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView()
+    ContentView(model: AppModel.shared)
   }
 }

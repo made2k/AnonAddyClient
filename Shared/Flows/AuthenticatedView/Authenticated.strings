@@ -1,0 +1,10 @@
+/* 
+  Authenticated.strings
+  AnonAddyClient
+
+  Created by Zach McGaughey on 2/18/21.
+  
+*/
+
+"aliases menu item" = "Aliases";
+"log out" = "Log Out";

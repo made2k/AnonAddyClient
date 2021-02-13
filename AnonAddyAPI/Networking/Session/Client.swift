@@ -15,4 +15,14 @@ public struct Client {
     self.token = token
   }
   
+  // MARK: - Loaders
+  
+  public func accountLoader() -> AccountLoader {
+    return AccountLoader(client: self)
+  }
+  
+  public func aliasLoader() -> AliasLoader {
+    return AliasLoader(client: self)
+  }
+  
 }

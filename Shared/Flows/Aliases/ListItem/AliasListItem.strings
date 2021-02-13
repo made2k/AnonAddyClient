@@ -1,0 +1,24 @@
+/* 
+  AliasListItem.strings
+  AnonAddyClient
+
+  Created by Zach McGaughey on 2/18/21.
+  
+*/
+
+"created inline" = "Created %@ ago";
+"forwards inline" = "forwards,";
+"blocked inline" = "blocked,";
+"sent inline" = "sent";
+"copy button" = "Copy";
+"send email button" = "Send Email";
+
+"created" = "Created";
+"create time" = "%@ ago";
+"forwarded" = "Forwarded";
+"blocked" = "Blocked";
+"reply sent" = "Replies/Sent";
+"active" = "Active";
+
+"description placeholder" = "Add description";
+

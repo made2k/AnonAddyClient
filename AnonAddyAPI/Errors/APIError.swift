@@ -22,6 +22,7 @@ public enum APIError: Error {
   
   // Client Errors
   case invalidEndpoint
+  case invalidEmail
   
   // Other
   case unknown(Error)

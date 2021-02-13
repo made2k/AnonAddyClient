@@ -11,6 +11,7 @@ internal struct Endpoint<Kind: EndpointKind, Response: Decodable> {
   
   var path: String
   var queryItems = [URLQueryItem]()
+  var method: HTTPMethod = .get
   
 }
 
@@ -30,6 +31,16 @@ internal extension Endpoint {
     }
     
     var request = URLRequest(url: url)
+    request.httpMethod = method.rawValue
+    
+    switch method {
+    case .post, .patch:
+      request.httpBody = queryItems.percentEncoded()
+      
+    default:
+      break
+    }
+    
     Kind.prepare(&request, with: data)
     return request
   }

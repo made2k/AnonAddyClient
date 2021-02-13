@@ -8,8 +8,10 @@
 import Foundation
 import SwiftUI
 
-/// Simple activity indicator that blocks the user from accessing
-/// views under it.
+/**
+ Simple activity indicator that blocks the user from accessing
+ views under it.
+ */
 struct ActivityIndicatorView: View {
   
   var body: some View {

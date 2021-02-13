@@ -17,6 +17,8 @@ class LoginViewModel: ObservableObject {
     case error
   }
   
+  let accountModel: AccountModel
+  
   @Published private(set) var state = State.idle
   @Published var accessToken: String = ""
   @Published private(set) var canLogin: Bool = false
@@ -24,7 +26,9 @@ class LoginViewModel: ObservableObject {
   
   private var cancellables: Set<AnyCancellable> = []
   
-  init() {
+  init(accountModel: AccountModel) {
+    
+    self.accountModel = accountModel
     
     $accessToken
       .map(\.isEmpty)
@@ -38,28 +42,24 @@ class LoginViewModel: ObservableObject {
   }
   
   func login() {
-    let accessToken: AccessToken = AccessToken(rawValue: self.accessToken)
-    // Create a temporary client to validate our token
-    let client = Client(token: accessToken)
-    let loader = AccountLoader(client: client)
     
     state = .loading
     
-    loader.loadAccount()
-      .receive(on: DispatchQueue.main)
-      .sink { [weak self] (completion) in
-                
-        switch completion {
-        case .failure(let error):
-          self?.loginFailed(error)
+    accountModel.login(with: self.accessToken)
+      .subscribe(on: DispatchQueue.main)
+      .sink(
+        receiveCompletion: { [weak self] completion in
           
-        default:
-          break
-        }
-        
-      } receiveValue: { [weak self] _ in
-        self?.loginSuccess(client)
-      }
+          switch completion {
+          case .failure:
+            self?.state = .error
+            
+          case .finished:
+            self?.resetState()
+          }
+          
+        }, receiveValue: { _ in }
+      )
       .store(in: &cancellables)
     
   }
@@ -68,16 +68,5 @@ class LoginViewModel: ObservableObject {
     accessToken = ""
     state = .idle
   }
-  
-  private func loginSuccess(_ client: Client) {
-    state = .idle
-    SessionManager.shared.client = client
-    print("login success")
-  }
-  
-  private func loginFailed(_ error: APIError) {
-    state = .error
-    print("login failed")
-  }
-  
+
 }
